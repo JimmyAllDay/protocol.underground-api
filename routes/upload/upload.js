@@ -169,7 +169,6 @@ routes.post('/', upload.array('audio'), async function (req, res, next) {
       if (err) {
         throw err;
       }
-
       // files object contains all files names
       // log them on console
       files.forEach((file) => {
